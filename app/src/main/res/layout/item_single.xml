@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <!--显示item-->
+    <LinearLayout
+        android:id="@+id/itemLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:id="@+id/imgItemBtnSinglePlus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/plus"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutItemSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txtItemSingleSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="演员"
+                android:textColor="@color/accent_material_light"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtItemSingleSinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="薛之谦"
+                android:textColor="@color/accent_material_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/imgBtnItemSingleDown"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/detail"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--点击显示隐藏的组件-->
+    <include layout="@layout/item_hide_single" />
+
+</LinearLayout>
+

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@color/background_floating_material_light">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFuzzy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4"
+            android:background="@drawable/edt_shapefuzzy"
+            android:gravity="center"
+            android:hint="搜索"
+            android:textColor="@color/persinal_infor_color"
+            android:textSize="@dimen/textsize_18"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/search_cancle"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/moreo1"
+            android:text="取消"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/fuzzyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayoutFuzzy"/>
+</RelativeLayout>

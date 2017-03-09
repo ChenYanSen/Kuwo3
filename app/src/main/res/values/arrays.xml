@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hobby">
+    <item>钓鱼</item>
+    <item>滑雪</item>
+    <item>唱歌</item>
+    <item>跑步</item>
+    <item>看电影</item>
+    <item>旅游</item>
+</string-array>
+
+</resources>

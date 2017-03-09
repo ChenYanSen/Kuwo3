@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">KuWo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_music_sort">本地音乐</string>
+    <string name="single">单曲</string>
+    <string name="iLike">歌手</string>
+    <string name="recent">专辑</string>
+    <string name="folder">文件夹</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personal_infor_set_account">账号:</string>
+    <string name="personal_infor_set_password">密码:</string>
+    <string name="personal_infor_set_miss_password">忘记密码</string>
+    <string name="personal_infor_set_nickName">昵称</string>
+    <string name="personal_infor_set_name_edit">编辑</string>
+    <string name="persoanl_infor_set_name_signature">个性签名</string>
+    <string name="personal_infor_set_personal_hobby">爱好</string>
+    <string name="personal_infor_set_fishing">钓鱼</string>
+    <string name="personal_infor_set_watch_movie">电影</string>
+    <string name="personal_infor_set_tourism">旅游</string>
+    <string name="peronsal_infor_set_runing">跑步</string>
+    <string name="personal_infor_set_persoal_sex">性别</string>
+    <string name="personal_infor_set_province">所在省</string>
+    <string name="personal_infor_set_city">所在市</string>
+    <string name="personal_infor_set_email">邮箱</string>
+    <string name="personal_infor_set_man">男</string>
+    <string name="personal_infor_set_woman">女</string>
+    <string name="personal_infor_set_area">地区</string>
+    <string name="title_activity_personal_infor_set">PersonalInforSetActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_waiting">Waiting</string>
+    <string name="register_account_please">请输入账号</string>
+    <string name="register_password_input">请输入密码</string>
+    <string name="register_password_second">确认入密码</string>
+    <string name="register_register">注册</string>
+    <string name="txt_hide_01">新建</string>
+    <string name="txt_hide_02">删除</string>
+    <string name="txt_hide_03">分享</string>
+    <string name="txt_hide_04">歌曲信息</string>
+    <string name="txt_hide_05">收藏</string>
+<!--    -->
+
+    <string name="title_activity_fuzzy_search">FuzzySearchActivity</string>
+    <string name="title_activity_broadcast_receiver_music_player">BroadcastReceiverMusicPlayer
+    </string>
+    <string name="title_activity_music_play_back">MusicPlayBack</string>
+    <string name="title_activity_list_music_play">ListMusicPlayActivity</string>
+    <string name="title_activity_view_pager_1">ViewPager_1Activity</string>
+    <string name="title_activity_view_pager_2">ViewPager_2Activity</string>
+    <string name="title_activity_unlock_play">UnlockPlay</string>
+    <string name="title_activity_video_players">VideoPlayers</string>
+    <string name="delete_dialog_text">确定删除吗？</string>
+</resources>

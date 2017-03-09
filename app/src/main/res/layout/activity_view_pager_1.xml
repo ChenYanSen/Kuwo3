@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+   android:id="@+id/ViewPager_1"
+    tools:context="com.designers.kuwo.activitys.ViewPager_1Activity">
+
+    <View
+        android:id="@+id/myView"
+
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+      android:layout_alignParentBottom="true"></View>
+     
+
+    <ImageView
+        android:id="@+id/needle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="170dp"
+        android:src="@drawable/play_needle_1"></ImageView>
+    <!--adjustViewBounds  和 maxHeight一起使用，用来缩小图片-->
+
+</RelativeLayout>

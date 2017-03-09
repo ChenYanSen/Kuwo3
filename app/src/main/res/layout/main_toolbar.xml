@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolBar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="3"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <com.designers.kuwo.utils.CircularImage
+                android:id="@+id/main_photo_imgview"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="搜索歌曲丶歌手..."
+                android:textSize="12dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/txt_shape"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/search"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+</android.support.v7.widget.Toolbar>

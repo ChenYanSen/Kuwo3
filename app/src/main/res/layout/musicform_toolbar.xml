@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolBar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/musicform_toolbar_color"
+    android:fitsSystemWindows="true"
+    android:minHeight="?attr/actionBarSize"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/toolbar_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="我的歌单"
+            android:textSize="@dimen/textsize_18"
+            android:textColor="@color/textcolor_white"
+            android:paddingTop="5dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

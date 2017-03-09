@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainPlay"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/textcolor_white">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:collapseColumns="5"
+        android:gravity="center"
+        android:stretchColumns="1">
+
+        <TableRow android:gravity="center">
+
+            <ImageView
+                android:id="@+id/playimg"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/musicformimg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/playbar_songName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="未知"
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/playbar_singer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="未知"
+                    android:textSize="@dimen/textsize_12" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/playlist_menu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/playlist" />
+
+            <ImageView
+                android:id="@+id/playbar_play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/playbar_next"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/next" />
+        </TableRow>
+    </TableLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="51dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:max="100"
+        android:thumb="@null" />
+</RelativeLayout>

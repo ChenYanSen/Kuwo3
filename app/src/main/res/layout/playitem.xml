@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/playItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_play_listview"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/musicName"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="111"
+            android:textSize="17dp"></TextView>
+
+        <TextView
+            android:id="@+id/musicAuhtor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/musicName"
+            android:text="222"
+            android:textSize="13dp"></TextView>
+
+        <ImageView
+            android:id="@+id/musicDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/delete"></ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,317 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="6dp"
+    android:background="@drawable/line_shape"
+    tools:context="com.designers.kuwo.activitys.PersonalInforSetActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/musicform_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/personal_infor"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <com.designers.kuwo.utils.CircularImage
+            android:id="@+id/avatar_image"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="@string/personal_infor_set_nickName"
+                    android:textColor="@color/persinal_infor_color" />
+
+                <TextView
+                    android:id="@+id/user_nickName_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:textColor="@color/persinal_infor_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="@string/personal_infor_set_account"
+                    android:textColor="@color/persinal_infor_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/account_show_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:textColor="@color/persinal_infor_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="VIP"
+                android:textColor="@color/red"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signature_tv"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:layout_weight="2"
+            android:text="@string/persoanl_infor_set_name_signature"
+            android:textColor="@color/personal_infor_set_signature"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/personal_set_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:layout_below="@id/personal_infor">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:stretchColumns="1"
+            >
+
+            <TableRow
+                android:id="@+id/personal_nike"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:id="@+id/personal_nike_name_show"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="50dp"
+                    android:gravity="center|left"
+                    android:text="@string/personal_infor_set_nickName"
+                    android:textColor="@color/persinal_infor_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/personal_nike_name_edit"
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:layout_height="50dp"
+                    android:background="@null"
+
+                    android:textColor="@color/persinal_infor_color"
+                    android:gravity="center"
+                    android:textSize="17sp" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/personal_infor_set"
+                    android:layout_marginRight="0dp"
+                    android:gravity="center"
+                    />
+            </TableRow>
+            <View
+                android:layout_height="1dip"
+                android:background="#B7B7B7" />
+            <TableRow android:id="@+id/personal_signature">
+
+                <TextView
+                    android:id="@+id/personal_name_signature"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="50dp"
+
+                    android:text="@string/persoanl_infor_set_name_signature"
+                    android:textColor="@color/persinal_infor_color"
+                    android:textSize="16sp"
+                    android:gravity="center|left"
+
+                    />
+
+                <TextView
+                    android:id="@+id/personal_name_signature_edit"
+                    android:layout_width="0dp"
+                    android:layout_weight="13"
+                    android:layout_height="50dp"
+                    android:textColor="@color/persinal_infor_color"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="17sp" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/personal_infor_set"
+                    android:layout_marginRight="1dp"
+                    android:gravity="bottom"
+                    />
+            </TableRow>
+            <View
+                android:layout_height="1dip"
+                android:background="#B7B7B7" />
+            <TableRow>
+
+            </TableRow>
+
+            <TableRow android:id="@+id/hobby_tr">
+
+                <TextView
+                    android:id="@+id/personal_hobby"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="50dp"
+                    android:gravity="center|left"
+                    android:text="@string/personal_infor_set_personal_hobby"
+                    android:textColor="@color/persinal_infor_color"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/personal_hobby_edit"
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:layout_height="50dp"
+                    android:textColor="@color/persinal_infor_color"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/personal_infor_set"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
+                    />
+            </TableRow>
+            <View
+                android:layout_height="1dip"
+                android:background="#B7B7B7" />
+            <TableRow   android:id="@+id/personal_sex">
+
+                <TextView
+                    android:id="@+id/peronsal_set"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="50dp"
+                    android:gravity="center|left"
+                    android:text="@string/personal_infor_set_persoal_sex"
+                    android:textColor="@color/persinal_infor_color"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/personal_sex_edit"
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:layout_height="50dp"
+                    android:textColor="@color/persinal_infor_color"
+                    android:background="@null"
+                    android:gravity="center"
+
+                    android:textSize="17sp" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/personal_infor_set"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
+                    />
+            </TableRow>
+            <View
+                android:layout_height="1dip"
+                android:background="#B7B7B7" />
+            <TableRow   android:id="@+id/personal_area" >
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="50dp"
+                    android:gravity="center|left"
+                    android:text="@string/personal_infor_set_area"
+                    android:textColor="@color/persinal_infor_color"
+                    android:textSize="16sp"
+
+                    />
+                <TextView
+                    android:id="@+id/mProvinceTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="50dp"
+                    android:textColor="@color/persinal_infor_color"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="省"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/mCityTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="50dp"
+                    android:textColor="@color/persinal_infor_color"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="市"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/mDistinguishTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="50dp"
+                    android:textColor="@color/persinal_infor_color"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="区"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/personal_infor_set"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
+                    />
+            </TableRow>
+            <View
+                android:layout_height="1dip"
+                android:background="#B7B7B7" />
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

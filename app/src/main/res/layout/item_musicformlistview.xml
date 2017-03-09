@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="3"
+        android:padding="5dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/itemMusicForm_photo_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/musicformimg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemMusicForm_first_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="我的歌单"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/itemMusicForm_second_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:text="0首歌曲"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/itemMusicForm_third_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="0首歌曲"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/right" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

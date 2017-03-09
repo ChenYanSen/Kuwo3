@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.designers.kuwo.utils.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <include layout="@layout/musicform_toolbar" />
+
+        <TableLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:collapseColumns="3"
+            android:stretchColumns="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TableRow android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/music_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:gravity="left"
+                    android:background="@drawable/txt_shape"
+                    android:paddingLeft="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/search" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:hint="搜索歌曲"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="|"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/selectMany"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/select" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:id="@+id/search_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#55bbbbbb"
+            android:layout_below="@id/search_layout"/>
+
+        <ListView
+            android:id="@+id/music_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_line"
+            android:layout_marginBottom="55dp"
+            android:background="@color/theme_color"/>
+
+        <include layout="@layout/main_playbar" />
+    </RelativeLayout>
+
+</com.designers.kuwo.utils.SwipeBackLayout>

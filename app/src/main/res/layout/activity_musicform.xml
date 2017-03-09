@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/musicform_toolbar" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/buildform"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/buildform" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="新建"
+                    android:textColor="#1296db"
+                    android:textSize="@dimen/textsize_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/subtract" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="自建歌单"
+                android:textSize="@dimen/textsize_14" />
+
+            <TextView
+                android:id="@+id/musicform_num"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="155dp"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="@dimen/textsize_14" />
+
+            <ImageView
+                android:id="@+id/showlist_btn"
+                android:layout_width="25dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/less" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#55000000" />
+
+        <ListView
+            android:id="@+id/musicform_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/theme_color"/>
+    </LinearLayout>
+
+    <include layout="@layout/main_playbar" />
+</RelativeLayout>

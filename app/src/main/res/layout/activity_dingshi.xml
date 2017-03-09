@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#E0E0E0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/musicform_toolbar"></include>
+      
+
+    
+      
+       <TextView
+           android:id="@+id/settext"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="#E0E0E0"
+        android:textColor="#0080FF"
+        android:gravity="center_vertical"
+        />
+  <LinearLayout 
+      android:id="@+id/linear01"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+      <TextView
+        android:id="@+id/viewFeedback1"
+        android:layout_width="200dip"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+         android:textSize="20sp"
+        android:text="关闭"
+         android:paddingLeft="10dip"
+        android:textColor="@android:color/black"
+        />
+         <ImageView
+        android:id="@+id/dagou01"
+       
+       
+        android:paddingLeft="120dip"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        />
+      </LinearLayout>
+       <TextView
+       
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:background="#E0E0E0"
+        />
+  <LinearLayout 
+      android:id="@+id/linear02"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+      <TextView
+        android:id="@+id/viewFeedback2"
+        android:layout_width="200dip"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+         android:textSize="20sp"
+        android:text="10分钟"
+         android:paddingLeft="10dip"
+        android:textColor="@android:color/black"
+        />
+         <ImageView
+        android:id="@+id/dagou02"
+       
+       
+        android:paddingLeft="120dip"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        />
+      </LinearLayout>
+      
+       <TextView
+       
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#E0E0E0"
+        />
+  <LinearLayout 
+      android:id="@+id/linear03"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+      <TextView
+        android:id="@+id/viewFeedback3"
+        android:layout_width="200dip"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+         android:textSize="20sp"
+        android:text="20分钟"
+         android:paddingLeft="10dip"
+        android:textColor="@android:color/black"
+        />
+         <ImageView
+        android:id="@+id/dagou03"
+       
+       
+        android:paddingLeft="120dip"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        />
+      </LinearLayout>
+      
+       <TextView
+       
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#E0E0E0"
+        />
+  <LinearLayout 
+      android:id="@+id/linear04"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+      <TextView
+        android:id="@+id/gujuji"
+        android:layout_width="200dip"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:text="30分钟"
+        android:paddingLeft="10dip"
+        android:textColor="@android:color/black"
+        />
+         <ImageView
+        android:id="@+id/dagou04"
+      
+        android:paddingLeft="120dip"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        />
+      </LinearLayout>
+         <TextView
+       
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#E0E0E0"
+        />
+  <LinearLayout 
+      android:id="@+id/linear05"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+      <TextView
+        android:id="@+id/viewFeedback4"
+        android:layout_width="200dip"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+         android:textSize="20sp"
+        android:text="1小时"
+         android:paddingLeft="10dip"
+        android:textColor="@android:color/black"
+        />
+         <ImageView
+        android:id="@+id/dagou05"
+       
+       
+        android:paddingLeft="120dip"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        />
+      </LinearLayout>
+         <TextView
+       
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#E0E0E0"
+        />
+  <LinearLayout 
+      android:id="@+id/linear06"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+      <TextView
+        android:id="@+id/viewFeedback"
+        android:layout_width="200dip"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+         android:textSize="20sp"
+        android:text="自定义"
+         android:paddingLeft="10dip"
+        android:textColor="@android:color/black"
+        />
+         <ImageView
+        android:id="@+id/dagou06"   
+        android:paddingLeft="120dip"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        />
+      </LinearLayout>
+      
+</LinearLayout>

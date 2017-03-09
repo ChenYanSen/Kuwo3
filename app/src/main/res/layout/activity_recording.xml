@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+
+    >
+
+    <include layout="@layout/musicform_toolbar"></include>
+   <!-- <LinearLayout
+        android:id="@+id/LinearLayoutListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linear01"
+        android:layout_marginBottom="48dp">-->
+
+        <ListView
+          android:layout_marginTop="59dp"
+            android:id="@+id/ListView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/recording_list_color"
+            ></ListView>
+
+   <!-- </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal">
+
+       <!-- <ImageButton
+            android:id="@+id/ImageButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_button01"></ImageButton>-->
+        <com.designers.kuwo.utils.CircularImage
+            android:id="@+id/ImageButton01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+
+            android:scaleType="fitXY"/>
+       <!-- <ImageButton
+
+            android:id="@+id/ImageButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_button02"></ImageButton>
+-->
+
+    </LinearLayout>
+</RelativeLayout>
+

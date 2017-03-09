@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/itemLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <com.designers.kuwo.utils.CircularImage
+            android:id="@+id/circularImageSinger"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutItemSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txtItemSinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="演员"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/txtItemSongNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="10sp"
+                android:text="6首"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

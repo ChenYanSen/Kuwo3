@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menubackg"
+    tools:context=".MainActivity">
+
+    <com.designers.kuwo.utils.MyHorizontalScollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <include layout="@layout/menu"></include>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/main_above_tablayout" />
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:collapseColumns="3"
+                        android:background="@color/theme_color">
+
+                        <TableRow
+                            android:layout_margin="5dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:id="@+id/main_myMusicForm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.designers.kuwo.utils.CircularImage
+                                    android:id="@+id/main_vadio_imgview"
+                                    android:layout_width="58dp"
+                                    android:layout_height="58dp"
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="fitXY" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="4dp"
+                                    android:text="视频"
+                                    android:textColor="@color/textcolor_black"
+                                    android:textSize="@dimen/textsize_18" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/main_record_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.designers.kuwo.utils.CircularImage
+                                    android:id="@+id/main_record_imgview"
+                                    android:layout_width="63dp"
+                                    android:layout_height="63dp"
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="fitXY" />l
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="4dp"
+                                    android:text="录音"
+                                    android:textColor="@color/textcolor_black"
+                                    android:textSize="@dimen/textsize_18" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/main_sound_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.designers.kuwo.utils.CircularImage
+                                    android:id="@+id/main_sound_imgview"
+                                    android:layout_width="54dp"
+                                    android:layout_height="54dp"
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="fitXY" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="4dp"
+                                    android:text="音频"
+                                    android:textColor="@color/textcolor_black"
+                                    android:textSize="@dimen/textsize_18" />
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="#55aaaaaa" />
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:collapseColumns="3"
+                        android:stretchColumns="1"
+                        android:background="@color/theme_color">
+
+                        <TableRow android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="15dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/music_play_imgbtn1" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="音乐排行榜"
+                                android:textColor="@color/textcolor_black"
+                                android:textSize="@dimen/textsize_18" />
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginRight="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/right1" />
+                        </TableRow>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:background="#55aaaaaa" />
+
+                    </TableLayout>
+
+                    <ListView
+                        android:id="@+id/main_sortmusic_listview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="55dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:divider="@null"
+                        android:background="@color/theme_color"/>
+                </LinearLayout>
+
+                <include layout="@layout/main_playbar" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.designers.kuwo.utils.MyHorizontalScollView>
+</RelativeLayout>

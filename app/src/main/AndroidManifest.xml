@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.designers.kuwo">
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!--  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utils.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activitys.PersonalInforSetActivity"
+            android:label="@string/title_activity_personal_infor_set">
+
+        </activity>
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+        <activity
+            android:name=".activitys.Register"
+            android:label="@string/title_activity_register"></activity>
+        <activity
+            android:name=".activitys.Waiting"
+            android:label="@string/title_activity_waiting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".activitys.MusicSingerPageActivity" />
+
+        <activity
+            android:name=".activitys.FuzzySearchActivity"
+            android:label="@string/title_activity_fuzzy_search" />
+
+        <activity
+            android:name=".activitys.ListMusicPlayActivity"
+            android:label="@string/title_activity_list_music_play" />
+        <activity
+            android:name=".activitys.VideoPlayers"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:label="@string/title_activity_video_players">
+
+
+        </activity>
+        <!--主页-->
+        <activity
+            android:name=".activitys.MainActivity"
+
+            android:label="@string/app_name">
+
+
+        </activity>
+
+        <activity android:name=".activitys.MusicFormActivity" />
+
+        <activity android:name=".activitys.FromMusicActivity" />
+
+        <activity
+            android:name=".activitys.LikeMusicActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+
+        <activity
+            android:name=".activitys.SingleMusicActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+
+        <activity
+            android:name=".activitys.RecentMusicActivity"
+            android:theme="@style/AppTheme.TransparentActivity" />
+
+
+        <activity android:name=".activitys.MusicSortActivity" />
+        <activity android:name=".activitys.MusicAlbumPageActivity" />
+        <activity android:name=".activitys.RecordingActivity"/>
+        <activity android:name=".activitys.KuMuiscActivity">
+        </activity>
+    </application>
+
+</manifest>

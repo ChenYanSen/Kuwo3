@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+       android:id="@+id/video_item" >
+
+<TextView
+    android:id="@+id/video_title"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_weight="3"
+    android:text="title"
+   android:gravity="left|center_vertical"
+    android:layout_marginLeft="10dp"
+
+    />
+<TextView
+    android:id="@+id/video_singer"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_weight="2"
+    android:text="singer"
+    android:gravity="left|center_vertical"
+    />
+<TextView
+    android:id="@+id/video_time"
+    android:layout_width="0dp"
+    android:layout_height="20dp"
+    android:layout_weight="1"
+    android:textSize="10sp"
+    android:gravity="right|center_vertical"
+    android:text="time"
+    android:layout_marginRight="10dp"
+    />
+</LinearLayout>

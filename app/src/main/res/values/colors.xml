@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_toast_backgrund">#508A8A8A</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="music_sort_top_color">#f7614d</color>
+    <color name="music_sort_top_tab_color">#141414</color>
+    <color name="music_sort_top_tab_color_2">#ffffff</color>
+    <color name="matrix_color">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="gridview_background_color">#f7e472</color>
+    <color name="province_bg">#8daac3</color>
+    <color name="province_bg_2">#ffffff</color>
+    <color name="red">#FFFF1826</color>
+    <color name="music_sort_txt_color">#141414</color>
+    <color name="music_sort_basic_color">#FFFFFF</color>
+    <color name="music_sort_hide_bg">#8daac3</color>
+    <color name="personal_infor_set_signature">#E492C3</color>
+    <color name="persinal_infor_color">#8B8B7A</color>
+    <color name="state_pressed">#1296db</color>
+    <color name="state_selected">#77f7e472</color>
+    <color name="state_focused">#ffffff</color>
+    <color name="textcolor_white">#ffffff</color>
+    <color name="textcolor_black">#000000</color>
+    <color name="textcolor_white1">#F7F7F7</color>
+    <color name="musicform_toolbar_color">#8A8A8A</color>
+    <color name="musicform_viewpager_color">#ffffff</color>
+    <color name="musicform_listitem_color1">#208A8A8A</color>
+    <color name="musicform_listitem_color2">#508A8A8A</color>
+    <color name="musicsort_indexview_color">#44000000</color>
+    <color name="theme_color">#bbeeeeee</color>
+    <color name="login_botion_color">#8B8989</color>
+    <color name="login_botion_down_color">#696969</color>
+    <color name="recording_list_color">#74a9b2</color>
+</resources>

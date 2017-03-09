@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemHideLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@color/musicform_toolbar_color"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/itemHideLinearLayoutAdd"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgHideAdd"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/insert1" />
+
+        <TextView
+            android:id="@+id/txtHideAdd"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/txt_hide_01"
+            android:textColor="@color/textcolor_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemHideLinearLayoutRemove"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgHideRemove"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtHideRemove"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/txt_hide_02"
+            android:textColor="@color/textcolor_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemHideLinearLayoutMessage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgHideMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/songmsg2" />
+
+        <TextView
+            android:id="@+id/txtHideMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/txt_hide_04"
+            android:textColor="@color/textcolor_black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemHideLinearLayoutCollect"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/itemRelativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/imgHideCollect1"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/collectsong3" />
+            <TextView
+                android:layout_below="@id/imgHideCollect1"
+                android:id="@+id/txtHideCollect"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/txt_hide_05"
+                android:textColor="@color/textcolor_black"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

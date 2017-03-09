@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/line_shape"
+    tools:context="com.designers.kuwo.activitys.Register">
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:id="@+id/tbLogin"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:collapseColumns="2"
+            android:padding="20dp"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/register_imgUser"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/personal_infor_set_account" />
+
+                <EditText
+                    android:id="@+id/register_edtUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edt_shape"
+                    android:hint="@string/register_account_please"
+                    android:textSize="13sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/register_imgPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/personal_infor_set_password" />
+
+                <EditText
+                    android:id="@+id/register_edtPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+
+                    android:layout_weight="5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="10dp"
+                    android:password="true"
+                    android:background="@drawable/edt_shape"
+                    android:hint="@string/register_password_input"
+                    android:textSize="13sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/register_imgPasswords"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/personal_infor_set_password" />
+
+                <EditText
+                    android:id="@+id/register_edtPassword_second"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="10dp"
+                    android:password="true"
+                    android:background="@drawable/edt_shape"
+                    android:hint="@string/register_password_second"
+                    android:textSize="13sp" />
+            </TableRow>
+
+        </TableLayout>
+        <Button
+            android:id="@+id/register_Register"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/btnLogin"
+            android:layout_centerHorizontal="true"
+           android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_reg_bg"
+            android:text="@string/register_register"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>
